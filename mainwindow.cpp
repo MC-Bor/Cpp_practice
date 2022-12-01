@@ -20,7 +20,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
     QFile file;
-    globPath = QFileDialog::getOpenFileName(nullptr,"","C:\\Users\\koroc\\Documents\\","*.json");
+    globPath = QFileDialog::getOpenFileName(nullptr,"","C:\\","*.json");
     file.setFileName(globPath);
     if (file.open(QIODevice::ReadOnly|QFile::Text))
     {
